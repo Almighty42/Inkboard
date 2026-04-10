@@ -1,0 +1,27 @@
+{% from "weather/components/weather_card.html" import weather_info %}
+
+<html>
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="static/css/main.css">
+</head>
+
+<body>
+	<section id="current_section">
+		<div>
+			<img id="weather_icon" src="static/icons/sun.svg" width="240" height="240" />
+		</div>
+		{{ weather_info('static/icons/sun.svg', data.temperature, '', '6', '5%', '50%', '4', true) }}
+	</section>
+	<section id="today_section">
+		{{ weather_info('static/icons/sun.svg', '21°', '6 - 12', '6', '5%', '50%', '4') }}
+		{{ weather_info('static/icons/sun.svg', '19°', '12 - 18','4', '10%', '62%', '3') }}
+		{{ weather_info('static/icons/sun.svg', '23°', '18 - 24','8', '0%', '40%', '6') }}
+	</section>
+</body>
+
+</html>

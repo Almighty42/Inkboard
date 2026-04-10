@@ -1,1 +1,23 @@
-body {}
+@use "weather";
+
+body {
+  height: 600px;
+  width: 800px;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+div,
+section {
+  display: flex;
+  box-sizing: border-box;
+}
+
+p,
+span {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}

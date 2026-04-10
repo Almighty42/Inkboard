@@ -4,3 +4,5 @@ __pycache__/
 .env
 app/static/css/main.css
 app/static/css/main.css.map
+app/static/css/weather.css
+app/static/css/weather.css.map
